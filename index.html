@@ -6,17 +6,42 @@
 		* {
 			box-sizing: border-box; 
 			font-family: 'Press Start 2P', cursive;
+		
+		}
+		body {
+			background-color: #FED7AA;
 		}
 	</style>
 
 </head>
 <body>
-	<div style="position: relative; display:inline-block;">
-		
+
+ <!-- TITLE OF GAME-->
+	<div style="
+		align-items: center; 
+		display: flex; 
+		justify-content: center; 
+		padding-bottom: 40px; 
+		padding-top: 20px; 
+		font-size: 25px;
+		"
+	>
+		Welcome to Samurai 2D!
+	</div>
+
+	<!-- GAME SCREEN -->
+	<div style="
+		position: relative; 
+		display:flex; 
+		align-items: flex-start; 
+		justify-content: center;
+		"
+	>
+		<!-- BARS AND TIME -->
 		<div style="
 			position: absolute; 
 			display: flex; 
-			width: 100%; 
+			width: 65rem; 
 			align-items:center;
 			padding: 20px;
 		">
@@ -32,7 +57,12 @@
 				border-bottom: 4px solid white;
 				"
 			>
-				<div style=" background-color: red; height: 30px; width: 100%; "></div>
+				<div style="
+					background-color: red; 
+					height: 30px; 
+					width: 100%; 
+					"
+				></div>
 				<div 
 					id="playerHealth"  
 					style="
@@ -74,7 +104,11 @@
 
 				"
 			>
-				<div style=" background-color: red; height: 30px; "></div>
+				<div style="
+					background-color: red; 
+					height: 30px; 
+					"
+				></div>
 				<div 
 					id="enemyHealth"  
 					style="
@@ -108,6 +142,22 @@
 		<canvas></canvas>
 
 	</div>
+
+	<div style="
+		display: flex; 
+		align-items: center; 
+		justify-content: center; 
+		padding-top: 40px; 
+		font-size: 10px;
+		"
+	>
+		Player on the left use WASD to move and space bar to attack
+			<br>
+			<br>
+		Player on the right use ARROW KEYS to move and ARROW DOWN to attack
+	</div>
+
+
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js" integrity="sha512-H6cPm97FAsgIKmlBA4s774vqoN24V5gSQL4yBTDOY2su2DeXZVhQPxFK4P6GPdnZqM9fg1G3cMv5wD7e6cFLZQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/utils.js"></script>
 	<script src="js/classes.js"></script>
