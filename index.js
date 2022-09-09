@@ -340,3 +340,19 @@ window.addEventListener('keyup', (event) => {
 		break
 	}
 })
+
+// preventing default of arrow keys and spacebar to not scroll the page
+
+window.addEventListener(
+  "keydown",
+  (e) => {
+    if (
+      ["Space", "ArrowUp", "ArrowDown", "ArrowLeft", "ArrowRight"].includes(
+        e.code
+      )
+    ) {
+      e.preventDefault();
+    }
+  },
+  false
+);
